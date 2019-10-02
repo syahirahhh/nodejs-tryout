@@ -4,7 +4,6 @@
 // }
 // module.exports = products; //use products obj in somewhere else
 
-console.log(__dirname,__filename);
 //class of object
 class Products{
     constructor(name,desc){
@@ -13,7 +12,7 @@ class Products{
     }
     greeting(){
         console.log(`Product name ${this.name} and desc is ${this.desc}`);
-        
+
     }
 }
-module.exports = Products; 
+module.exports = Products;

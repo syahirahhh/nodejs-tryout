@@ -4,9 +4,9 @@ const Sequelize = require('sequelize')
 const sequelize = new Sequelize('mysql://localhost:3306/test1', {
 username: 'root'
 })
-    
-     //create method 
-    var userr = sequelize.define('user',{
+
+     //create method
+    var user = sequelize.define('user',{
         user_id: Sequelize.INTEGER,
         name: Sequelize.STRING,
         address: Sequelize.STRING,
@@ -17,7 +17,7 @@ sequelize
     force: true
 })
 .then(function(){
-    userr.create({
+    user.create({
         user_id: 3,
         name: 'abu',
         address: 'selangor',

@@ -1,0 +1,8 @@
+.idea
+
+# Lock files
+package-lock.json
+yarn.lock
+
+# ignore log files
+*.log
